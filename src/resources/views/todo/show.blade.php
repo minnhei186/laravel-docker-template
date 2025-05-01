@@ -11,9 +11,11 @@
         <p class="card-text">作成日時：{{ $todo->created_at }}</p>
       </div>
       <div class="row">
-	<a href="{{route('todo.edit',$todo->id)}}" class="btn btn-info">編集する</a>
+        <div class="col-auto">
+          <a href="{{route('todo.edit',$todo->id)}}" class="btn btn-info">編集する</a>
+        </div>
       </div>
-    </div>
+     </div>
   </div>
 </div>
 @endsection
